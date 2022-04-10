@@ -30,7 +30,6 @@ class _State extends State<homescreen> {
         index: _selectedIndex,
         children: _pages,
       ),
-
       bottomNavigationBar: SizedBox(
         height: 65,
         child: BottomNavigationBar(
@@ -65,16 +64,18 @@ class _State extends State<homescreen> {
               label: 'More',
             ),
           ],
-          currentIndex: _selectedIndex, //New
+          currentIndex: _selectedIndex,
+          //New
           onTap: _onItemTapped,
         ),
       ),
-
       floatingActionButton: FloatingActionButton(
-        onPressed: () {Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => const hru()),
-        );},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const hru()),
+          );
+        },
         backgroundColor: Colors.blue,
         child: Icon(Icons.add),
       ),
