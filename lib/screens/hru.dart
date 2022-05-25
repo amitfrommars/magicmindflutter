@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:magicmind/screens/expandableactivitypage.dart';
-import 'package:magicmind/screens/homescreen.dart';
 import 'package:magicmind/screens/selectactivitiespage.dart';
 
 class hru extends StatefulWidget {
@@ -281,10 +279,11 @@ class _State extends State<hru> {
         ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {},
-        icon: Icon(Icons.edit),
-        label: const Text("Edit Moods"),
+        icon: Icon(Icons.navigate_next_rounded),
+        label: const Text("Continue"),
         backgroundColor: Colors.blue,
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
